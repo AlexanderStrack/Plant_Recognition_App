@@ -1,0 +1,35 @@
+{
+    "date": "2025_07_29",
+    "data_subpath": "05_data",
+    "notebooks_subpath": "01_notebooks/02_preprossing",
+    "images_subpath": "04_src/images_grad_cam",
+    "excel_analysis_file": "computed_data/plant_disease_dataset_analysis.xlsx",
+    "train_dataset_folder": "original_data/2.1.1 New Plant Diseases/train",
+    "valid_dataset_folder": "original_data/2.1.1 New Plant Diseases/valid",
+
+    "model_folder": "models",
+    "model_name": "model_{date}.keras",
+    "history_name": "model_history_{date}.json",
+    "layers_name": "first_model_layers.json",
+    "report_name": "first_model_classification_results_{date}.pkl",
+    "gradcam_images_folder": "04_src/images_grad_cam/first_model_{date}",
+    "shap_images_folder": "04_src/images_shap/first_model_{date}",
+    "tensorboard_log": "04_src/tensorboard_log_file/first_model_{date}",
+
+    "model_folder": "models",
+    "model_name_adv": "Advanced Model/2025_07_31_plant_classifier_fine_tuned_int_phase_model.keras",
+    "history_name_adv": "Advanced Model/model_history_int_phase_2025_07_31.json",
+    "history_name_adv_2": "Advanced Model/2025_07_31_model_history_fine_tune_phase.json",
+    "layers_name_adv": "Advanced Model/layers.json",
+    "report_name_adv": "Advanced_Model_advanced_model_classification_results.pkl",
+    "gradcam_images_folder_adv": "04_src/images_grad_cam/advanced_model",
+    "shap_images_folder_adv": "04_src/images_shap/advanced_model",
+    "tensorboard_log_adv": "04_src/tensorboard_log_file/"
+
+
+
+
+
+
+  }
+  
