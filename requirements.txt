@@ -14,10 +14,11 @@ plotly>=5.17.0
 openpyxl==3.1.2
 
 
+
 # ML Frameworks
-torch==2.1.2
-torchvision==0.16.2
-tensorflow==2.19.0
+torch
+torchvision
+tensorflow==2.15.0
 xgboost>=1.7.4
 
 
@@ -31,6 +32,7 @@ scikit-image>=0.20.0
 # Utilities
 tqdm>=4.65.0
 pyyaml>=6.0
+utils==1.0.1
 
 # Visualization & Notebooks
 notebook==6.5.4
