@@ -16,7 +16,6 @@ openpyxl
 
 
 # ML Frameworks .
-
 torch
 torchvision
 tensorflow
@@ -49,3 +48,6 @@ python-dotenv
 
 # Optional
 pytorch-lightning
+
+# For Model Hub Integration
+huggingface_hub
