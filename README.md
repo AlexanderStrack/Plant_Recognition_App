@@ -19,6 +19,9 @@ The project successfully developed a highly accurate deep learning model using *
 
 This approach resulted in strong generalization capabilities, as evidenced by the convergence of training and validation accuracy curves near 100%. The model's reasoning was validated using interpretability techniques like Grad-CAM and SHAP, which showed the model correctly focused on relevant features like leaf texture and vein patterns to make predictions.
 
+### Deployed App
+https://plant-recognition-app.streamlit.app/ 
+
 ### How to Run
 1.  Clone this repository.
 2.  Install the required libraries listed in the `requirements.txt` file.
