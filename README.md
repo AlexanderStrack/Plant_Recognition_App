@@ -1,45 +1,30 @@
-Project Name
-==============================
+# Plant Disease Recognition using Deep Learning
 
-This repo is a Starting Pack for DS projects. You can rearrange the structure to make it fits your project.
+### Problem Statement
+This project addresses the challenge of accurately identifying various plant diseases and healthy leaves from images using deep learning. The goal is to develop a robust image classification model that can distinguish between 38 different classes of plant diseases and healthy leaves, with a secondary objective of building a user-friendly application to showcase the results.
 
-Project Organization
-------------
+### Data Source
+The project uses the **New Plant Diseases Dataset**, which is available on Kaggle. It contains images of 38 classes of healthy and diseased plant leaves. The dataset is well-organized, with separate sub-folders for each class, making it suitable for image classification tasks.
 
-    ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data               <- Should be in your computer but not on Github (only in .gitignore)
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's name, and a short `-` delimited description, e.g.
-    │                         `1.0-alban-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, links, and all other explanatory materials.
-    │
-    ├── reports            <- The reports that you'll make during this project as PDF
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   ├── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │   │   └── visualize.py
+### Tech Stack
+* **Python**: Core programming language.
+* **TensorFlow/Keras**: For building and training deep learning models (Convolutional Neural Networks and transfer learning with MobileNetV2).
+* **Streamlit**: For creating the interactive web application and dashboard.
+* **Pandas**: For data handling and manipulation.
+* **Matplotlib & Seaborn**: For creating visualizations like bar charts, loss curves, and confusion matrices.
+* **SHAP & Grad-CAM**: For model interpretability and explaining model predictions.
 
---------
+### Key Findings
+The project successfully developed a highly accurate deep learning model using **transfer learning** with the **MobileNetV2** architecture. The model was trained in two phases: an initial training phase with frozen weights, followed by a fine-tuning phase where the top layers were made trainable.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+This approach resulted in strong generalization capabilities, as evidenced by the convergence of training and validation accuracy curves near 100%. The model's reasoning was validated using interpretability techniques like Grad-CAM and SHAP, which showed the model correctly focused on relevant features like leaf texture and vein patterns to make predictions.
+
+### How to Run
+1.  Clone this repository.
+2.  Install the required libraries listed in the `requirements.txt` file.
+3.  Ensure the dataset is structured correctly in the `original_data` directory as described in the `1_Exploration.py` file.
+4.  Run the Streamlit application from your terminal:
+    ```bash
+    streamlit run Introduction.py
+    ```
+5.  The app will open in your browser, allowing you to interact with the dashboard and explore the project.
