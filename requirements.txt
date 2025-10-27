@@ -3,7 +3,7 @@
 # To install the packages, run:
 # pip install -r requirements.txt
 
-
+protobuf==3.20.3
 # Core Libraries
 numpy
 pandas
